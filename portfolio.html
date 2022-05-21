@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
@@ -24,11 +24,12 @@
         </ul>
     </nav>
     <ul class="header-mail-tel">
-        <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="header-mail-tel-item"><a href="mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a>
+        </li>
+        <li class="header-mail-tel-item"><a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a></li>
     </ul>
 </header>
- <main> 
+<main> 
      <section class="portfolio">
          <ul class="portfolio-btn-list">
              <li><button type="button" class="portfolio-btn">Все</button></li>
@@ -37,7 +38,9 @@
              <li><button type="button" class="portfolio-btn">Дизайн</button></li>
              <li><button type="button" class="portfolio-btn">Маркетинг</button></li>
          </ul>
-         <ul>
+     </section>
+     <section>
+            <ul>
              <li class="portfolio-item">
                  <img src="./img/img-1.jpg" alt="сайт">
                  <h3 class="portfolio-title">Технокряк</h3>
@@ -58,6 +61,8 @@
                  <h3 class="portfolio-title">Проект Prime</h3>
                  <p class="portfolio-text">Маркетинг</p>
              </li>
+            </ul> 
+            <ul>
              <li class="portfolio-item">
                  <img src="./img/img-5.jpg" alt="Приложение2">
                  <h3 class="portfolio-title">Проект Boxes</h3>
@@ -83,21 +88,22 @@
                  <h3 class="portfolio-title">Growing Business</h3>
                  <p class="portfolio-text">Приложение</p>
              </li>
-         </ul>
-    </section>    
-</main>
-<footer id="contavts" class="footer">
-    <a href="/"><span class="web-footer">Web</span> <span class="footer-studio">Studio</span></a>
-    <address class="footer-address">
-        <ul class="footer-list">
-            <li class="footer-item-address"><a href="https://goo.gl/maps/Sv4f2n2z4F3GZWwy5"
-                    class="footer-link-address">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="footer-item-mail"><a href="mailto:info@example.com" class="footer-link-mail">info@example.com</a>
-            </li>
-            <li class="footer-item-tel"><a href="tel:+380991111111" class="footer-link-tel">+38 099 111 11 11</a></li>
-        </ul>
-    </address>
-</footer>
+            </ul>
+        </section> 
 
+</main>
+
+    <footer id="contavts" class="footer">
+        <a href="/"><span class="web-footer">Web</span> <span class="footer-studio">Studio</span></a>
+        <address class="footer-address">
+            <ul class="footer-list">
+             <li class="footer-item-address"><a href="https://goo.gl/maps/Sv4f2n2z4F3GZWwy5"
+                    class="footer-link-address link">г. Киев, пр-т Леси Украинки, 26</a></li>
+             <li class="footer-item-mail"><a href="mailto:info@example.com" class="footer-link-mail link">info@example.com</a>
+             </li>
+             <li class="footer-item-tel"><a href="tel:+380991111111" class="footer-link-tel link">+38 099 111 11 11</a></li>
+            </ul>
+        </address>
+    </footer>
 </body>
 </html>
