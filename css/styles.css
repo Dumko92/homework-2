@@ -1,3 +1,16 @@
+:root {
+    --title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --btn-background-service-color: #188CE8;
+    --btn-font-color: #FFFFFF;
+    --logo-color: #000000;
+    --header-background-color: #2F303A;
+    --about-benefits-background-color: #E5E5E5;
+    --team-background-color: #F5F4FA;
+}
+
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -19,7 +32,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .header-studio {
@@ -29,45 +42,44 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--logo-color);
 }
 
-.header-logo {
-
-}
 
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-color);
 }
 
-.header-link:hover {
-    color: #2196F3;
-}
 
-.header-mail {
+.header-tel, .header-mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--text-color);
 }
 
-.header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #757575;
+.header-link:hover, 
+.header-link:focus, 
+.header-mail:hover, 
+.header-mail:focus, 
+.header-tel:hover, 
+.header-tel:focus {
+    color: var(--accent-color);
 }
+
+
+
+
 
 /* studio */
 
 .studio {
-    background-color: #2F303A;
+    background-color: var(--header-background-color);
 }
 
 .btn-service {
@@ -82,17 +94,12 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--btn-font-color);
 }
 
-.btn-service :hover {
-    color: #FFFFFF;
-    background: #188CE8;
-}
-
-.btn-service :focus {
-    color: #FFFFFF;
-    background: #188CE8;
+.btn-service :hover, .btn-service :focus {
+    color: var(--btn-font-color);
+    background: var(--btn-background-service-color);
 }
 
 .studio-title {
@@ -102,14 +109,14 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--btn-font-color);
 }
 
 
 /* benefits */
 
 .benefits {
-    background: #E5E5E5;
+    background: var(--about-benefits-background-color);
 }
 
 .benefits-title {
@@ -118,7 +125,7 @@ body {
     line-height: 1,14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--title-color);
 }
 
 .benefits-text {
@@ -126,13 +133,13 @@ body {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 
 /* about */
 
 .about {
-    background: #E5E5E5;
+    background: var(--about-benefits-background-color);
 }
 
 .about-title {
@@ -141,14 +148,14 @@ body {
     line-height: 1,16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-color);
 }
 
 
 /* team */
 
 .team {
-    background: #F5F4FA;
+    background: var(--team-background-color);
 }
 
 .team-title {
@@ -157,7 +164,7 @@ body {
     line-height: 1,18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-color);
 }
 
 .team-text {
@@ -166,13 +173,33 @@ body {
     line-height: 1,18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 
 /* footer */
 
 .footer {
-    background: #2F303A;
+    background: var(--header-background-color);
+}
+
+.web-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.footer-studio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .web-footer {
@@ -180,7 +207,7 @@ body {
     font-size: 26px;
     line-height: 1,19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .footer-studio {
@@ -188,7 +215,7 @@ body {
     font-size: 26px;
     line-height: 1,19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--btn-font-color);
 }
 
 .footer-link-address {
@@ -197,7 +224,7 @@ body {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--btn-font-color);
 }
 
 .footer-link-mail {
@@ -206,7 +233,7 @@ body {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-color);
 }
 
 .footer-link-tel{
@@ -215,13 +242,13 @@ body {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-color);
 }
 
 /* portfolio */
 
 .portfolio {
-    background: #E5E5E5;
+    background: var(--about-benefits-background-color);
 }
 
 .portfolio-btn {
@@ -231,25 +258,21 @@ body {
     line-height: 1,62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-color);
 }
 
-.portfolio-btn:hover {
+.portfolio-btn:hover, .portfolio-btn:focus {
     color: #FFFFFF;
-    background: #2196F3;
+    background: var(--accent-color);
 }
 
-.portfolio-btn:focus {
-    color: #FFFFFF;
-    background: #2196F3;
-}
 
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-color);
 }
 
 .portfolio-text{
@@ -257,5 +280,5 @@ body {
     font-size: 16px;
     line-height: 1,87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
